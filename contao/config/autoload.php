@@ -25,6 +25,5 @@ ClassLoader::addClasses(array
 (
 	// Library
 	'MultiDns\Helper'    => 'system/modules/multidns/library/MultiDns/Helper.php',
-	'MultiDns\PageModel' => 'system/modules/multidns/library/MultiDns/PageModel.php',
-	'MultiDns\PageRoot'  => 'system/modules/multidns/library/MultiDns/PageRoot.php',
+	'MultiDns\PageModel' => 'system/modules/multidns/library/MultiDns/PageModel.php'
 ));

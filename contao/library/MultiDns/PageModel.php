@@ -21,21 +21,16 @@ class PageModel extends \Contao\PageModel
 	/**
 	 * Alter the "domain" key
 	 *
-	 * @param bool $blnClearDomainKey
-	 *
 	 * @return static The page model
 	 */
-	public function loadDetails($blnClearDomainKey = true)
+	public function loadDetails()
 	{
 		parent::loadDetails();
 
-		// As the FrontendIndex::run checks that "domain" equals the environmental "host", we need to clear it per default
-		if ($blnClearDomainKey)
-		{
-			$this->domain = '';
-
-			return $this;
-		}
+		// Return the current host if in dns list or the full dns list to have a domain restriction at all
+		$this->domain = in_array(\Environment::get('host'), trimsplit(',', $this->domain))
+			? \Environment::get('host')
+			: $this->domain;
 
 		return $this;
 	}
