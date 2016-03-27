@@ -1,0 +1,25 @@
+{
+	"name": "richardhj/contao-multidns",
+	"description": "MultiDns extension for Contao Open Source CMS lets you configure multiple dns entries per root page",
+	"keywords": ["contao", "multidns"],
+	"type": "contao-module",
+	"license": "LGPL-3.0+",
+	"authors": [
+		{
+			"name": "Richard Henkenjohann",
+			"email": "richardhenkenjohann@googlemail.com",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.3",
+		"contao/core": ">=3.1"
+	},
+	"extra": {
+		"contao": {
+			"sources": {
+				"contao": "system/modules/multidns"
+			}
+		}
+	}
+}
