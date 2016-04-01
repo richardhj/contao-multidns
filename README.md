@@ -1,3 +1,6 @@
+[![Latest Version on Packagist](http://img.shields.io/packagist/v/richardhj/contao-multidns.svg)](https://packagist.org/packages/richardhj/contao-multidns)
+[![Dependency Status](https://www.versioneye.com/php/richardhj:contao-multidns/badge.svg)](https://www.versioneye.com/php/richardhj:contao-multidns)
+
 # MultiDns for Contao Open Source CMS
 
 Per default it is only possible to assign one domain or none per root page.
